@@ -27,3 +27,13 @@
 #usererror,#passerror{
     color:red;
 }
+@media only screen and (max-width: 600px) {
+    #loginback{
+        height: 100vh;
+        background-image:url("../images/loginbg2.jpg");
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        filter: blur(5px);
+    }
+  }
