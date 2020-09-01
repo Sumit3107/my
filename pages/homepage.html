@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASAN BILL</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid p-2">
+      <div class="container">
+        <div class="row col-3 col-sm-2 col-md-10 w-100">
+          <img
+            class="col-10 col-sm-12 col-md-1"
+            src="../images/logo.png"
+            alt="Asan"
+            id="logo"
+          />
+          <h4 class="col-md-5 mt-3" id="asan">ASAN BILL</h4>
+          <div class="col-6 col-md-4 offset-md-2 mt-2">
+            <div class="row">
+              <input
+                class="form-control col-10"
+                id="search"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa fa-search mt-2 ml-2" id="searchbtn"></i>
+            </div>
+          </div>
+        </div>
+        <button class="dropdown btn btn-secoandary float-right" id="userset">
+          <a href="#" data-toggle="dropdown"><i class="fa fa-user-circle fa-2x" data-toggle="dropdown"></i></a>
+          <ul class="dropdown-menu" id="userdrop">
+            <div class="square"></div>
+            <li class="dropdown-item">Customer Id:124141</li>
+            <li class="dropdown-item">Settings</li>
+            <li class="dropdown-item">Logout</li>
+          </ul>
+        </button>
+      </div>
+      <center>
+      <div
+        class="container navbar sticky-top navbar-expand-lg justify-content-center w-100 mt-2"
+        id="nav"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars" id="bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav navbar-expand-md">
+            <li class="nav-item dropdown shadow-lg ml-5">
+              <a class="p-2 mt-2 mt-sm-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-files-o"></i> Build Invoice</a
+              >
+              <ul class="dropdown-menu">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Cash Memo</a></li>
+                <li class="dropdown-item"><a href="#">GST Sale</a></li>
+                <li class="dropdown-item"><a href="#">Purchase</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-plus"></i> Add Log</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Ledger</a></li>
+                <li class="dropdown-item"><a href="#">Company</a></li>
+                <li class="dropdown-item"><a href="#">Product</a></li>
+                <li class="dropdown-item"><a href="#">Estimate</a></li>
+                <li class="dropdown-item"><a href="#">Quotation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-search"></i> Search/Exit</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Ledger</a></li>
+                <li class="dropdown-item"><a href="#">Company</a></li>
+                <li class="dropdown-item"><a href="#">Product</a></li>
+                <li class="dropdown-item"><a href="#">Purchase</a></li>
+                <li class="dropdown-item"><a href="#">GST Sale</a></li>
+                <li class="dropdown-item"><a href="#">Cash Memo</a></li>
+                <li class="dropdown-item"><a href="#">Purchase Return</a></li>
+                <li class="dropdown-item"><a href="#">GST Sale Return</a></li>
+                <li class="dropdown-item"><a href="#">Cash Memo Return</a></li>
+                <li class="dropdown-item"><a href="#">Estimate</a></li>
+                <li class="dropdown-item"><a href="#">Quotation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-inr"></i> Payments</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Supplier</a></li>
+                <li class="dropdown-item"><a href="#">Buyer</a></li>
+                <li class="dropdown-item"><a href="#">Cash Memo Buyer</a></li>
+                <li class="dropdown-item"><a href="#">Other Ledgers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-reply"></i> Return Log</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Purchase return</a></li>
+                <li class="dropdown-item"><a href="#">Sale Return</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-download"></i> Import Data</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Product List</a></li>
+                <li class="dropdown-item"><a href="#">Bank Details</a></li>
+                <li class="dropdown-item"><a href="#">Ledgers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-upload"></i> Export Data</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">Product-wise</a></li>
+                <li class="dropdown-item"><a href="#">Supplier-wise</a></li>
+                <li class="dropdown-item"><a href="#">Seller-wise</a></li>
+                <li class="dropdown-item"><a href="#">Cash Memo-wise</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="p-2" href="#" data-toggle="dropdown"
+                ><i class="fa fa-file-o"></i> Reports</a
+              >
+              <ul class="dropdown-menu shadow-lg">
+                <div class="square"></div>
+                <li class="dropdown-item"><a href="#">GST Returns</a></li>
+                <li class="dropdown-item"><a href="#">Financial Reports</a></li>
+                <li class="dropdown-item"><a href="#">Product</a></li>
+                <li class="dropdown-item"><a href="#">Estimate</a></li>
+                <li class="dropdown-item"><a href="#">Quotation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </center>
+      <center>
+        <div class="p-3 shadow-lg" id="welcome">Dashboard</div>
+      </center>
+    </div>
+
+    <div id="a"></div>
+    <script type="text/javascriot" src="../js/home.js"></script>
+  </body>
+</html>

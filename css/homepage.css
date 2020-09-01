@@ -1,0 +1,70 @@
+body{
+    font-family: 'Poppins', Arial, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+.container-fluid{
+    background-color: rgb(25,31,40);
+    color:white;
+}
+#search{
+    border-radius:30px;
+    background-color: rgb(25,31,40);
+}
+#userset{
+    position: absolute;
+    top: 5px;
+    right:140px;
+    color:white;
+}
+#userset:hover{
+    color:rgb(156,120,222);
+}
+#userset:hover .dropdown-menu{
+    display: block;
+}
+.dropdown a{
+    color:white;
+    text-decoration:none;
+}
+.dropdown a:hover{
+    color:rgb(156,120,222);
+    text-decoration:none;
+}
+.dropdown-item a{
+    color:black;
+    text-decoration:none;
+}
+#welcome{
+    width: 80%;
+    background-color: white;
+    color:black;
+    top:-50px;
+    transform:translate(0%,35%) ;
+    border-radius: 10px;
+}
+@media only screen and (max-width:768px){
+    #userset{
+        right:40px;
+    }
+    #bars{
+        position: absolute;
+        top:-50px;
+        left:5px;
+    }
+}
+@media only screen and (max-width: 988px) {
+    #search, #searchbtn, #asan {
+        display: none;
+    }
+    #bars{
+        position: absolute;
+        top:-30px;
+        left:5px;
+    }
+}
+@media only screen and (min-width: 922px) {
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
