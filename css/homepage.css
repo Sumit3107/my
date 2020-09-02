@@ -20,7 +20,7 @@ body{
 #userset:hover{
     color:rgb(156,120,222);
 }
-#userset:hover .dropdown-menu{
+#userset:hover #userdrop{
     display: block;
 }
 .dropdown a{
